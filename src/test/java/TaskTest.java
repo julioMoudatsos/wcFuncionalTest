@@ -17,7 +17,7 @@ public class TaskTest {
     public void init() {
         FirefoxOptions options = new FirefoxOptions();
         options.setCapability("browserName", "firefox");
-        options.setCapability("platformName", "WINDOWS");
+        options.setCapability("platformName", "LINUX");
         options.addArguments("--headless");
         try {
             driver = new RemoteWebDriver(new URL("http://192.168.15.11:4444/wd/hub"),options);
